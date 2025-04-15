@@ -6,6 +6,17 @@ sensor: ""  # Set sensor file if needed
 status: "Official"
 tags: ["mario", "aio"]
 files:
+  wfb.yaml:
+    wireless.channel: "161"
+    wireless.txpower: "20"
+    broadcast.stbc: "1"
+    broadcast.ldpc: "1"
+    broadcast.mcs_index: "1"
+    broadcast.tun_index: "1"
+    broadcast.fec_k: "8"
+    broadcast.fec_n: "12"  
+    telemetry.serial: ttyS2
+    telemetry.router: msposd
   wfb.conf:
     txpower: "1"
     channel: "161"

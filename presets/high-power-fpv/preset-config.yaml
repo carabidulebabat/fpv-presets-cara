@@ -7,8 +7,16 @@ status: "Experimental"
 tags: [ "high-power", "fpv" ]
 files:
   wfb.yaml:
+    wireless.channel: "161"
     wireless.txpower: "20"
-    wireless.channel: "173"
+    broadcast.stbc: "0"
+    broadcast.ldpc: "0"
+    broadcast.mcs_index: "1"
+    broadcast.tun_index: "1"
+    broadcast.fec_k: "8"
+    broadcast.fec_n: "12"  
+    telemetry.serial: ttyS2
+    telemetry.router: msposd
   majestic.yaml:
     fpv.enabled: "false"
     system.logLevel: "debug"
